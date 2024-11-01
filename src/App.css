@@ -1,0 +1,87 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* General styles for all links */
+a {
+  text-decoration: none; /* Removes the underline */
+  color: #000000; /* Black text color */
+  font-size: 18px;
+  padding: 12px 20px;
+  margin: 0 8px;
+  display: inline-block;
+  background-color: #E0E0E0; /* Light gray background for links */
+  border-radius: 5px; /* Adds slightly rounded corners */
+}
+
+/* Styles for hover effect */
+a:hover {
+  color: #ffffff; /* White text color on hover */
+  background-color: #FF4500; /* Orange background on hover */
+  border-radius: 8px; /* Adds more rounded corners on hover */
+}
+
+/* Active link styles */
+a:active {
+  color: #FF4500; /* Orange text color when link is clicked */
+  background-color: #333333; /* Dark gray background when active */
+}
+
+/* Adjusting link appearance for a navbar or menu */
+nav {
+  background-color: #F0F8FF; /* Light blue background for navigation bar */
+  padding: 15px 0;
+  border-bottom: 2px solid #FF4500; /* Orange bottom border */
+}
+
+nav a {
+  font-weight: 600; /* Slightly bold text for menu links */
+  color: #000000; /* Black text color */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  nav a {
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+}
